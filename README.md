@@ -1,1 +1,1 @@
-**Heart-Disease-Prediction**
+**Herat-Disease-Prediction**
