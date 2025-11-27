@@ -33,9 +33,7 @@ def predict_failure(data: dict):
     prob = failure_model.predict_proba(df_scaled)[0]
 
     failure_res = {
-        "attack_risk": round(float(prob[0]), 3),
-        "failure_risk": round(float(prob[1]), 3),
-        "healthy_prob": round(float(prob[2]), 3)
+        "failure_risk": round(float(prob[1]), 3)
     }
     max_prob = max(prob)
     if max_prob > 0.7:
